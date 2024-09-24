@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@media all and (max-widh:768px){
-.session1,  .session2 {
-width: 50%; 
-}
-}
+
 * {
-    width: 100%;
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
@@ -13,7 +8,7 @@ width: 50%;
  }
 
 .contentarea {
-    width: 1200px;
+    max-width: 1200px;
     margin-inline: auto;
     padding: 15px;
 }
@@ -32,6 +27,7 @@ width: 50%;
     list-style-type: none;
     gap: 20px;
     justify-content: flex-end;
+    /* width: 100%; */
     color: white;
 }
 
@@ -39,10 +35,17 @@ width: 50%;
     color: rgb(245, 237, 237);
     text-decoration: none;
     font-weight: 500;
+    flex-basis: 45%;
 
 }
-
-.headmenu2 {
+.headmenu1 .phone::before{
+    content: "\f879"; /*font unicode*/
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+     color: rgb(245, 244, 244);
+    font-weight: bold;
+}
+ .headmenu2 {
     display: flex;
     justify-content: space-between;
 }
@@ -183,26 +186,19 @@ width: 50%;
     gap: 50px;
     margin-top: 50px;
     /* width: 65%; */
-
 }
-
 .s5_column a {
     color: red;
     text-decoration: none;
 }
-
 .s5_column h3 {
     margin-block: 10px;
     font-weight: 500;
-
 }
-
 .s5_column p {
     line-height: 25px;
     font-weight: 400;
-
 }
-
 .s6_1>h3 {
     /* font-size: xx-large; */
     margin-block: 50px;
@@ -526,7 +522,68 @@ padding: 10px 20px;
     /* color: rgb(147, 148, 148); */
     font-size: small;
     font-weight: 200;
-
 }
+
+@media(max-width:576px){
+    .s2_head h1{
+       font-size: 15px; 
+     }
+    .s2_para h3{
+        margin-top: -44px;
+        font-size: 10px; 
+     }
+     .s2_btn{
+        margin-top: -70px;
+      }
+      .s2_btn a{
+        padding: 5px;
+      }
+      .s3_para{
+        text-align: justify;
+        width: 350px;
+      }
+    .headmenu1 ul{
+        flex-direction:column;
+        text-align: center;
+      }
+    .headmenu2 ul{
+        flex-direction:column;
+    }
+    .s4_box{
+        width: 50%;
+     }
+     .s4_1_text_img{
+        width: 100%;
+        flex-direction: column;
+     }
+     .s4_1_text_img p{
+        text-align: justify;
+    }
+    .s5_text h2{
+        text-align: left;
+    }
+    .s5_text p{
+        text-align: justify;
+        width: 350px;
+    }
+    .s5_column{
+        flex-direction: column;
+    }
+    .session6 p{
+        text-align: justify;
+    }
+    .s6_col_1{
+        flex-direction: column; 
+        gap: 50px;
+    }
+    .s6_col_2{
+        flex-direction: column; 
+        gap: 43px;
+    }
+    .s6_pic2 img{
+         margin-left: -151px;
+    }
+}
+
 
  
