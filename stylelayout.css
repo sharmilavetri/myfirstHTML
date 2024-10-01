@@ -524,6 +524,12 @@ padding: 10px 20px;
     font-weight: 200;
 }
 
+.footer p::before{
+    content: "\f1f9"; /*font unicode*/
+    font-family: "Font Awesome 6 Free";
+    color: rgb(185, 190, 194);
+}
+
 @media(max-width:576px){
     .s2_head h1{
        font-size: 15px; 
